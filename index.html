@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/additionalcss.css">
+    <link rel="stylesheet" href="./css/compiled.css">
+    <!--SLIDES-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+<script src="./js/slider.js"></script>
+<script src="./js/darkmode.js"></script>
+<body class="text-gray-900 dark:text-gray-200">
+    <div class="home bg-gray-200 h-auto dark:bg-gray-600">
+
+ 
+        <header class="sm:flex pb-4 border-b-4 border-gray-300">
+            <div class="logo flex items-center justify-evenly">
+                <a href="#"><img class="h-20" src="./logo.png" alt=""></a>
+                <a href="#"><svg class="h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg></a>
+                  <a href="#" class="h-9"><img class="h-9" src="../src/img/translating.svg" alt=""></a>
+            </div>
+            <nav class="flex justify-center">
+                <ul class="flex w-9/12 justify-between">
+                    <li class="text-center relative w-16 text-lg"><a class="hover:text-gray-500" href="#">Home</a></li>
+                    <li class="text-center relative w-16 text-lg"><a href="#">Rental</a></li>
+                    <li class=" text-center relative w-16 text-lg"><a href="#">Blog</a></li>
+                    <li class=" text-center relative w-16 text-lg"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="fixed bottom-0 right-0 bg-red-400 w-20 h-12 flex justify-center items-center rounded-tl-xl">
+                <input id="switchTheme" type="checkbox" class="night-toggle">
+            </div>
+        </header>
+    
+        <div class="h-screen">
+            <div class="splide h-4/5 bg-red-200">
+                <div class="splide__track h-full">
+                    <ul class="splide__list h-full">
+                        <li class="splide__slide bg-red-200 h-full">
+                            
+                        </li>
+                        <li class="splide__slide bg-green-200 h-full">
+                          
+                        </li>
+                        <li class="splide__slide bg-blue-400 h-full">
+                            
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="splide__progress">
+                    <div class="splide__progress__bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!--DARK MODE-->
+    <script>
+        document.querySelector('#switchTheme').addEventListener('click',function(){
+            let htmlClasses = document.querySelector('html').classList;
+            let checkbox = document.querySelector('#switchTheme');
+            if(localStorage.theme == 'dark'){
+                htmlClasses.remove('dark');
+                localStorage.removeItem('theme');
+                checkbox.checked = false;
+            }else{
+                htmlClasses.add('dark');
+                localStorage.theme='dark';
+                checkbox.checked = true;
+        }
+})
+    </script>
+  
+    
+</body>
+</html>
