@@ -14,24 +14,24 @@
 <script src="./js/slider.js"></script>
 <script src="./js/darkmode.js"></script>
 <body class="text-gray-900 dark:text-gray-200">
-    <div class="home bg-gray-200 h-auto dark:bg-gray-600">
+    <div class="home bg-gray-100 h-auto dark:bg-gray-600">
 
  
-        <header class="sm:flex pb-4 border-b-4 border-gray-300">
+        <header class="sm:flex pb-4 border-b-4 border-gray-200">
             <div class="logo flex items-center justify-evenly">
-                <a href="#"><img class="h-20" src="./logo.png" alt=""></a>
-                <a href="#"><i class="fas fa-language text-3xl text-gray-600 dark:text-gray-200"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart text-3xl text-gray-600 dark:text-gray-200"></i></a>
+                <a href="#"><img class="h-20 lg:h-24" src="./logo.png" alt=""></a>
+                <a href="#"><i class="fas fa-language text-3xl text-gray-600 dark:text-gray-200 sm:ml-8 lg:ml-20 hover:text-gray-500"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart text-3xl text-gray-600 dark:text-gray-200 sm:ml-8 hover:text-gray-500"></i></a>
             </div>
-            <nav class="flex justify-center">
+            <nav class="flex justify-center sm:items-center lg:ml-60">
                 <ul class="flex w-9/12 justify-between">
                     <li class="text-center relative w-16 text-lg"><a class="hover:text-gray-500" href="#">Home</a></li>
-                    <li class="text-center relative w-16 text-lg"><a href="#">Rental</a></li>
-                    <li class=" text-center relative w-16 text-lg"><a href="#">Blog</a></li>
-                    <li class=" text-center relative w-16 text-lg"><a href="#">Contact</a></li>
+                    <li class="text-center relative w-16 text-lg sm:mx-4"><a href="#" class="hover:text-gray-500">Rental</a></li>
+                    <li class=" text-center relative w-16 text-lg sm:mx-4"><a href="#" class="hover:text-gray-500">Blog</a></li>
+                    <li class=" text-center relative w-16 text-lg  sm:mx-4"><a href="#" class="hover:text-gray-500">Contact</a></li>
                 </ul>
             </nav>
-            <div class="fixed bottom-0 right-0 bg-red-400 w-20 h-12 flex justify-center items-center rounded-tl-xl">
+            <div class="fixed bottom-0 right-0 bg-red-400 w-20 h-12 flex justify-center items-center rounded-tl-xl z-10">
                 <input id="switchTheme" type="checkbox" class="night-toggle">
             </div>
         </header>
@@ -40,14 +40,14 @@
             <div class="splide h-4/5 bg-red-200">
                 <div class="splide__track h-full">
                     <ul class="splide__list h-full">
-                        <li class="splide__slide bg-red-200 h-full">
-                            <img class="h-full" src="../src/img/premiery2.jpeg" alt="">
+                        <li class="splide__slide bg-red-200 h-full flex justify-center items-center">
+                            <p>Coming soon</p>
                         </li>
-                        <li class="splide__slide bg-green-200 h-full">
-                          
+                        <li class="splide__slide bg-green-200 h-full flex justify-center items-center">
+                            <p>Coming soon</p>
                         </li>
-                        <li class="splide__slide bg-blue-400 h-full">
-                            
+                        <li class="splide__slide bg-blue-400 h-full flex justify-center items-center">
+                            <p>Coming soon</p>
                         </li>
                     </ul>
                 </div>
