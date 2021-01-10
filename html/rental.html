@@ -6,12 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/additionalcss.css">
     <link rel="stylesheet" href="../css/compiled.css">
+   
     <script src="https://kit.fontawesome.com/193f3f2978.js" crossorigin="anonymous"></script>
     <!--SLIDES-->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </head>
 <script src="../js/slider.js"></script>
 <script src="../js/darkmode.js"></script>
+
 <body class="text-gray-900 dark:text-gray-200 font-light  transition-all duration-500">
     <div class="home bg-gray-100 h-auto dark:bg-gray-600">
 
@@ -24,7 +26,7 @@
             </div>
             <nav class="flex justify-center sm:items-center lg:ml-60">
                 <ul class="flex w-9/12 justify-between">
-                    <li class="text-center relative w-16 text-lg"><a class="hover:text-gray-500" href="index.html">Home</a></li>
+                    <li class="text-center relative w-16 text-lg"><a class="hover:text-gray-500" href="../index.html">Home</a></li>
                     <li class="text-center relative w-16 text-lg sm:mx-4"><a href="rental.html" class="hover:text-gray-500 text-red-400">Rental</a></li>
                     <li class=" text-center relative w-16 text-lg sm:mx-4"><a href="blog.html" class="hover:text-gray-500">Blog</a></li>
                     <li class=" text-center relative w-16 text-lg  sm:mx-4"><a href="#contact" class="hover:text-gray-500">Contact</a></li>
@@ -35,27 +37,29 @@
             </div>
         </header>
     
-        <div class=" w-full bg-red-200 rounded-xl sm:flex md:w-4/5 mx-auto">
+        <div class="  rounded-xl md:flex md:w-4/5 mx-auto">
        
            
           
 
-            <div class="categories w-full bg-green-200 sm:w-1/4">
-                <h2 class="text-2xl">Categories</h2>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
+            <div class="w-full md:w-1/4 ">
+                <h2 class="text-2xl text-center">Categories <i class="cat-btn far fa-caret-square-down md:invisible"></i></h2>
+                <div class="categories h-1 overflow-hidden text-center md:h-full lg:mr-8">
+                    <p class="border-b border-gray-400 text-xl  my-1">Horror</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Thriler</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Historical</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Adventure</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Crime</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Drama</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Fantasy</p>
+                    <p class="border-b border-gray-400 text-xl  my-1">Political</p>
+                </div>
             </div>
-            <div class="main w-full bg-yellow-400 h-screen">
-                <div class="filters w-full flex flex-col justify-center items-center text-center sm:flex-row">
-                    <h2 class="text-3xl filter my-4 sm:invisible">Filters</h2>
-                    <form action="" class="sm:flex">
-                    <div class="prize my-2">
+            <div class="main w-full">
+                <div class="filters w-full flex flex-col justify-center items-center text-center md:flex-row">
+                    <h2 class="text-3xl filter my-4 md:invisible">Filters</h2>
+                    <form action="" class="md:flex">
+                    <div class="prize my-2 md:pr-8">
                         <h3 class="text-xl">Prize</h3>
                         <div class="flex">
                             <div>
@@ -94,6 +98,27 @@
                     </form>
     
                 </div>
+
+                <div class="products w-full bg-gray-200 rounded-2xl shadow-xl md:flex flex-wrap">
+                    <div class="product w-11/12 h-80 bg-gray-300 rounded-2xl shadow-xl m-4 md:w-52  lg:w-60 mx-auto ">
+ 
+                    </div>
+                    <div class="product w-11/12 h-80 bg-gray-300 rounded-2xl shadow-xl m-4 md:w-52 lg:w-60 mx-auto ">
+
+                    </div>
+                    <div class="product w-11/12 h-80 bg-gray-300 rounded-2xl shadow-xl m-4 md:w-52 lg:w-60 mx-auto ">
+
+                    </div>
+                    <div class="product w-11/12 h-80 bg-gray-300 rounded-2xl shadow-xl m-4 md:w-52 lg:w-60 mx-auto  ">
+
+                    </div>
+                    <div class="product w-11/12 h-80 bg-gray-300 rounded-2xl shadow-xl m-4 md:w-52 lg:w-60 mx-auto  ">
+
+                    </div>
+                    <div class="product w-11/12 h-80 bg-gray-300 rounded-2xl shadow-xl m-4 md:w-52 lg:w-60 mx-auto  ">
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -121,6 +146,6 @@
 })
     </script>
   
-    
+  <script src="../js/app.js"></script>
 </body>
 </html>
